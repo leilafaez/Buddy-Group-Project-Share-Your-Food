@@ -7,7 +7,15 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.post("/api/records", (req, res) => {
-  records.push(req.body);
+  const record = {
+    name: req.body.name,
+    address: req.body.address,
+    date: req.body.date,
+    time: req.body.time,
+    description: req.body.description || null
+  }
+
+  records.push(record);
 
   console.log(records);
 
