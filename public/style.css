@@ -28,16 +28,14 @@ h1{
     font-style: oblique;
     font-size: 50px;
     color: rgb(58, 17, 48);
+    margin-top: 0.5em;
 
 
 }
 .h1-span{
     color: azure;
 }
-.header-nav-bar{
 
-
-}
 .lay-out-input{
     display: flex;
     justify-items: center;
@@ -61,9 +59,7 @@ button:hover{
     color:rgb(251, 246, 246)
 }
 /* main */
-main{
 
-}
 /*main-article */
 .article{
     position: relative;
@@ -81,7 +77,7 @@ margin-left: 10px;
 #form-page{
     position: absolute;
     top: 2em;
-    left: 20em;
+    left: 12em;
     width: 100em;
     display: flex;
     flex-direction: column;
@@ -129,5 +125,10 @@ label{
     margin: 1.5em;
 }
 .logo{
-    border-radius: 20px;
+    border-radius: 30px;
+    width: 80px;
+    height: 80px;
+    margin-left: 2em;
+    margin-top: 1em;
 }
+
