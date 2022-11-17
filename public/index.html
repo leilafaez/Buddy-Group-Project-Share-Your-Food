@@ -4,30 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share your food</title>
+    <link href="./style.css" rel="stylesheet" />
+   
+   
+    <title>ShareYour Food</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <img  class="logo"src="./assets/Brown Simple Restaurant Logo (1).png" alt="logo">
+        <h1>**Share <span class="h1-span">Your</span>Food**</h1>
+        <nav id="navbar" class="header-nav-bar">
+            <section id="ul-part">
+                <button>Home</button>
+                <button>About</button>
+            </section>
         </nav>
     </header>
     <main>
-        <article>
-            <form action="/action_page.php">
+        <article class="article">
+            <img  class="fruit-img" src="./assets/photo-1490818387583-1baba5e638af.webp" alt="picture of some fruits">
+            <form id="form-page">
+              <div class="lay-out-input">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="adress">Address</label>
-                <input type="text" required placeholder="Please enter your address"><br><br>
-                <label for="appt">Choose a time for collection:</label>
-                <input type="time" id="collection-hours" name="collection-hours" min="09:00" max="18:00" required><br><br>
-                <input type="submit" value="Submit">
-              </form>
+                <input type="text" id="name" name="name" required placeholder="please enter your full name">
+              </div>
+              <div class="lay-out-input">
+                <label for="adress">Address:</label>
+                <input id="address"type="text" required placeholder="Please enter your address">
+              </div>
+              <div class="lay-out-input">
+                <label for="date">Date:</label> 
+                <input id="date" type="date" required>
+              </div> 
+              <div class="lay-out-input">
+                <label for="appt">Time:</label>
+                <input id="time" type="time" id="time"  name="collection-hours" min="09:00" max="18:00" required>
+              </div>
+              <div class="lay-out-input">
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea>
+              </div> 
+                <input class="submit-input"type="submit" value="Submit">
+            </form>
         </article>
         <aside>
 
         </aside>
     </main>
     <footer></footer>
-    
+    <script src="./script.js"></script>
 </body>
 </html>
