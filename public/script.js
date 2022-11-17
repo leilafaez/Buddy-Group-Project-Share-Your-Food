@@ -6,6 +6,9 @@ function logSubmit(event) {
      let date=document.getElementById("date").value;
      let description=document.getElementById("description").value
      let time=document.getElementById("time").value
+     alert("Submit!");
+     form.reset();
+
     const record={
       name:name,
       address:address,
@@ -13,7 +16,8 @@ function logSubmit(event) {
       time:time,
       description:description
 
-    } 
+    }
+
   console.log(record);
   
   }
